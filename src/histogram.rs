@@ -115,7 +115,7 @@ pub fn histogram(
         }
     } else {
         // Default: sort by frequency (high to low).
-        counts_vec.sort_by(|a, b| b.1.cmp(&a.1));
+        counts_vec.sort_by_key(|&(_, count)| std::cmp::Reverse(count));
     }
 
     if plot {
