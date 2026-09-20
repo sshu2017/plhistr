@@ -1,6 +1,6 @@
 [package]
 name = "plhistr"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Plot a histogram of a CSV column in the terminal"
 license = "MIT"
